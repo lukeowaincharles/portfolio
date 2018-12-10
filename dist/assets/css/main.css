@@ -1,4 +1,40 @@
 /* Fonts */
+.projects .projects_wrapper {
+  padding-top: 1.25rem; }
+  @media only screen and (min-width: 992px) {
+    .projects .projects_wrapper {
+      height: 600px; } }
+  .projects .projects_wrapper .title {
+    font-size: 1.5rem; }
+  .projects .projects_wrapper .title,
+  .projects .projects_wrapper .web-link {
+    font-weight: bold; }
+  .projects .projects_wrapper.citrus {
+    background-color: #F99D1C; }
+    .projects .projects_wrapper.citrus .project-image_background {
+      background-image: url(..\..\..\dist\assets\img\citrus_mobile.png);
+      background-size: cover;
+      height: 500px; }
+  .projects .projects_wrapper.macallan {
+    background-color: #088387; }
+    .projects .projects_wrapper.macallan .project-image_background {
+      background-image: url(..\..\..\dist\assets\img\macallan_mobile.png);
+      background-size: cover;
+      height: 500px; }
+  .projects .projects_wrapper.mulberry {
+    background-color: #D087BF; }
+    .projects .projects_wrapper.mulberry .project-image_background {
+      background-image: url(..\..\..\dist\assets\img\mulberry_mobile.png);
+      background-size: cover;
+      height: 500px; }
+
+.projects .device-icons {
+  display: none;
+  width: 20px; }
+  @media only screen and (min-width: 992px) {
+    .projects .device-icons {
+      display: inline-block; } }
+
 body {
   font-size: 16px;
   font-weight: normal;
@@ -7,7 +43,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #18181A;
-  font-family: "Karla, sans-serif";
+  font-family: "Noto Sans", sans-serif;
   animation-duration: .75s;
   -webkit-animation-duration: .75s;
   animation-delay: .4s;
@@ -23,13 +59,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Libre Baskerville", serif; }
+  font-family: "Noto Sans", sans-serif;
+  font-weight: normal; }
 
 p {
   line-height: 1.55; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #FFFFFF; }
 
 .is-open {
   display: block; }
@@ -38,11 +76,16 @@ ul {
   list-style: none;
   padding-left: 0; }
 
-.page-wrapper {
-  margin: 10px 15px; }
+.section-margin {
+  margin: 0.625rem 0.9375rem; }
   @media only screen and (min-width: 992px) {
-    .page-wrapper {
-      margin: 30px 70px; } }
+    .section-margin {
+      margin: 1.875rem 4.375rem; } }
+  .section-margin_sides {
+    margin: 0 0.9375rem; }
+    @media only screen and (min-width: 992px) {
+      .section-margin_sides {
+        margin: 0 4.375rem; } }
 
 .text-align__left {
   text-align: left; }
@@ -56,3 +99,8 @@ ul {
   @media only screen and (min-width: 768px) {
     .width-restrict__medium {
       width: 600px; } }
+
+nav li {
+  display: inline-block; }
+  nav li:first-child {
+    padding-right: 1.125rem; }
