@@ -1,0 +1,49 @@
+.projects {
+    .projects_wrapper {
+        padding-top: 1.25rem;
+        @include mq('desktop') {
+            height: 600px;
+        }
+        .title {
+            font-size: 1.5rem;
+        }
+        .title,
+        .web-link {
+            font-weight: bold;
+        }
+        &.citrus {
+            background-color: $color-primary-6;
+
+            .project-image_background {
+                background-image: url(..\..\..\dist\assets\img\citrus_mobile.png);
+                background-size: cover;
+                height: 500px;
+            }
+        }
+        &.macallan {
+            background-color: $color-primary-2;
+
+            .project-image_background {
+                background-image: url(..\..\..\dist\assets\img\macallan_mobile.png);
+                background-size: cover;
+                height: 500px;
+            }
+        }
+        &.mulberry {
+            background-color: $color-primary-3;
+
+            .project-image_background {
+                background-image: url(..\..\..\dist\assets\img\mulberry_mobile.png);
+                background-size: cover;
+                height: 500px;
+            }
+        }
+    }
+    .device-icons {
+        display: none;
+        width: 20px;
+        @include mq('desktop') {
+            display: inline-block;
+        }
+    }
+}
