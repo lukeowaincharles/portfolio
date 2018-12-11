@@ -1,15 +1,32 @@
 .projects {
     .projects_wrapper {
         padding-top: 1.25rem;
+        position: relative;
         @include mq('desktop') {
             height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .title {
-            font-size: 1.5rem;
+        .col-4,
+        .col-6 {
+            @include mq('desktop') {
+                display: inline-block;
+            }
         }
-        .title,
-        .web-link {
-            font-weight: bold;
+        .col-4 {
+            @include mq('desktop') {
+                width: 320px;
+            }
+        }
+        .col-6 {
+            @include mq('desktop') {
+                width: 600px;
+            }
+        }
+        .text {
+            margin-bottom: 2.3125rem;
+            opacity: .85;
         }
         &.citrus {
             background-color: $color-primary-6;
@@ -18,6 +35,32 @@
                 background-image: url(..\..\..\dist\assets\img\citrus_mobile.png);
                 background-size: cover;
                 height: 500px;
+                @include mq('tablet') {
+                    height: 300px;
+                    background-image: url(..\..\..\dist\assets\img\citrus_devices.png);
+                }
+                @include mq('desktop') {
+                    background-image: url(..\..\..\dist\assets\img\citrus_desktop.png);
+                    height: 420px;
+                }
+            }
+        }
+        &.forage-notes {
+            background-color: $color-primary-4;
+
+            .project-image_background {
+                background-image: url(..\..\..\dist\assets\img\.png);
+                background-size: cover;
+                height: 500px;
+                @include mq('tablet') {
+                    height: 300px;
+                    background-image: url(..\..\..\dist\assets\img\.png);
+
+                }
+                @include mq('desktop') {
+                    background-image: url(..\..\..\dist\assets\img\.png);
+                    height: 420px;
+                }
             }
         }
         &.macallan {
@@ -27,23 +70,77 @@
                 background-image: url(..\..\..\dist\assets\img\macallan_mobile.png);
                 background-size: cover;
                 height: 500px;
+
+                @include mq('tablet') {
+                    height: 300px;
+                    background-image: url(..\..\..\dist\assets\img\macallan_devices.png);
+                }
+                @include mq('desktop') {
+                    background-image: url(..\..\..\dist\assets\img\macallan_desktop.png);
+                    height: 420px;
+                }
             }
         }
         &.mulberry {
             background-color: $color-primary-3;
+            flex-direction: row-reverse;
 
             .project-image_background {
                 background-image: url(..\..\..\dist\assets\img\mulberry_mobile.png);
                 background-size: cover;
                 height: 500px;
+                @include mq('tablet') {
+                    height: 300px;
+                    background-image: url(..\..\..\dist\assets\img\mulberry_devices.png);
+                }
+                @include mq('desktop') {
+                    background-image: url(..\..\..\dist\assets\img\mulberry_desktop.png);
+                    height: 460px;
+                    position: absolute;
+                    left: -160px;
+                    width: 795px;
+                    top: 95px;
+                }
+            }
+        }
+        &.run {
+            background-color: $color-primary-5;
+            flex-direction: row-reverse;
+
+            .project-image_background {
+                background-image: url(..\..\..\dist\assets\img\run_mobile.png);
+                background-size: cover;
+                height: 500px;
+                @include mq('tablet') {
+                    height: 300px;
+                    background-image: url(..\..\..\dist\assets\img\run_digital_devices.png);
+                }
+                @include mq('desktop') {
+                    background-image: url(..\..\..\dist\assets\img\run_desktop.png);
+                    height: 460px;
+                    position: absolute;
+                    left: -160px;
+                    width: 795px;
+                    top: 95px;
+                }
             }
         }
     }
     .device-icons {
         display: none;
-        width: 20px;
+        cursor: pointer;
         @include mq('desktop') {
+            padding: 0 0.3125rem 1.4rem;
             display: inline-block;
+        }
+        &_mobile {
+            width: 15px;
+        }
+        &_ipad {
+            width: 23px;
+        }
+        &_desktop {
+            width: 47px;
         }
     }
 }
