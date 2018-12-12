@@ -1,5 +1,12 @@
 footer {
     padding: 1.875rem 0 4.0625rem;
+    @include mq('desktop') {
+        padding: 0;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .text {
         opacity: .8;
     }

@@ -188,6 +188,20 @@
 
 footer {
   padding: 1.875rem 0 4.0625rem; }
+  @media only screen and (min-width: 992px) {
+    footer {
+      padding: 0;
+      height: 600px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   footer .text {
     opacity: .8; }
   footer .about .title {
