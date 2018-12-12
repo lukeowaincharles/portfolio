@@ -14,6 +14,8 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
+  .projects .projects_wrapper a:hover, .projects .projects_wrapper a:active {
+    color: #18181A; }
   @media only screen and (min-width: 992px) {
     .projects .projects_wrapper .col-4,
     .projects .projects_wrapper .col-6 {
@@ -27,48 +29,61 @@
   .projects .projects_wrapper .text {
     margin-bottom: 2.3125rem;
     opacity: .85; }
+  .projects .projects_wrapper .project-image_background {
+    background-size: cover;
+    height: 500px; }
+    @media only screen and (min-width: 768px) {
+      .projects .projects_wrapper .project-image_background {
+        height: 300px; } }
+    @media only screen and (min-width: 992px) {
+      .projects .projects_wrapper .project-image_background {
+        height: 550px;
+        width: 770px;
+        top: 45px;
+        position: absolute; } }
+    .projects .projects_wrapper .project-image_background.device-image {
+      display: none; }
+      @media only screen and (min-width: 992px) {
+        .projects .projects_wrapper .project-image_background.device-image {
+          height: 484px;
+          width: 772px;
+          top: 55px; } }
   .projects .projects_wrapper.citrus {
     background-color: #F99D1C; }
-    .projects .projects_wrapper.citrus .project-image_background {
-      background-image: url(..\..\..\dist\assets\img\citrus_mobile.png);
-      background-size: cover;
-      height: 500px; }
+    .projects .projects_wrapper.citrus .default {
+      background-image: url(..\..\..\dist\assets\img\citrus_mobile.png); }
       @media only screen and (min-width: 768px) {
-        .projects .projects_wrapper.citrus .project-image_background {
-          height: 300px;
+        .projects .projects_wrapper.citrus .default {
           background-image: url(..\..\..\dist\assets\img\citrus_devices.png); } }
       @media only screen and (min-width: 992px) {
-        .projects .projects_wrapper.citrus .project-image_background {
-          background-image: url(..\..\..\dist\assets\img\citrus_desktop.png);
-          height: 420px; } }
+        .projects .projects_wrapper.citrus .default {
+          background-image: url(..\..\..\dist\assets\img\citrus_desktop.png); } }
+    .projects .projects_wrapper.citrus .device-image {
+      background-image: url(..\..\..\dist\assets\img\citrus_devices.png); }
   .projects .projects_wrapper.forage-notes {
     background-color: #578063; }
-    .projects .projects_wrapper.forage-notes .project-image_background {
-      background-image: url(..\..\..\dist\assets\img\.png);
-      background-size: cover;
-      height: 500px; }
+    .projects .projects_wrapper.forage-notes .default {
+      background-image: url(..\..\..\dist\assets\img\.png); }
       @media only screen and (min-width: 768px) {
-        .projects .projects_wrapper.forage-notes .project-image_background {
-          height: 300px;
+        .projects .projects_wrapper.forage-notes .default {
           background-image: url(..\..\..\dist\assets\img\.png); } }
       @media only screen and (min-width: 992px) {
-        .projects .projects_wrapper.forage-notes .project-image_background {
-          background-image: url(..\..\..\dist\assets\img\.png);
-          height: 420px; } }
+        .projects .projects_wrapper.forage-notes .default {
+          background-image: url(..\..\..\dist\assets\img\.png); } }
+    .projects .projects_wrapper.forage-notes .device-image {
+      background-image: url(..\..\..\dist\assets\img\.png); }
   .projects .projects_wrapper.macallan {
     background-color: #088387; }
-    .projects .projects_wrapper.macallan .project-image_background {
-      background-image: url(..\..\..\dist\assets\img\macallan_mobile.png);
-      background-size: cover;
-      height: 500px; }
+    .projects .projects_wrapper.macallan .default {
+      background-image: url(..\..\..\dist\assets\img\macallan_mobile.png); }
       @media only screen and (min-width: 768px) {
-        .projects .projects_wrapper.macallan .project-image_background {
-          height: 300px;
+        .projects .projects_wrapper.macallan .default {
           background-image: url(..\..\..\dist\assets\img\macallan_devices.png); } }
       @media only screen and (min-width: 992px) {
-        .projects .projects_wrapper.macallan .project-image_background {
-          background-image: url(..\..\..\dist\assets\img\macallan_desktop.png);
-          height: 420px; } }
+        .projects .projects_wrapper.macallan .default {
+          background-image: url(..\..\..\dist\assets\img\macallan_desktop.png); } }
+    .projects .projects_wrapper.macallan .device-image {
+      background-image: url(..\..\..\dist\assets\img\macallan_devices.png); }
   .projects .projects_wrapper.mulberry {
     background-color: #D087BF;
     -webkit-box-orient: horizontal;
@@ -76,21 +91,36 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
     .projects .projects_wrapper.mulberry .project-image_background {
-      background-image: url(..\..\..\dist\assets\img\mulberry_mobile.png);
       background-size: cover;
       height: 500px; }
       @media only screen and (min-width: 768px) {
         .projects .projects_wrapper.mulberry .project-image_background {
-          height: 300px;
-          background-image: url(..\..\..\dist\assets\img\mulberry_devices.png); } }
+          height: 300px; } }
       @media only screen and (min-width: 992px) {
         .projects .projects_wrapper.mulberry .project-image_background {
-          background-image: url(..\..\..\dist\assets\img\mulberry_desktop.png);
           height: 460px;
           position: absolute;
           left: -160px;
           width: 795px;
           top: 95px; } }
+      @media only screen and (min-width: 1200px) {
+        .projects .projects_wrapper.mulberry .project-image_background {
+          height: 520px;
+          left: -150px;
+          width: 915px;
+          top: 55px; } }
+      .projects .projects_wrapper.mulberry .project-image_background.default {
+        background-image: url(..\..\..\dist\assets\img\mulberry_mobile.png); }
+        @media only screen and (min-width: 768px) {
+          .projects .projects_wrapper.mulberry .project-image_background.default {
+            background-image: url(..\..\..\dist\assets\img\mulberry_devices.png); } }
+        @media only screen and (min-width: 992px) {
+          .projects .projects_wrapper.mulberry .project-image_background.default {
+            background-image: url(..\..\..\dist\assets\img\mulberry_desktop.png); } }
+      .projects .projects_wrapper.mulberry .project-image_background.device-image {
+        background-image: url(..\..\..\dist\assets\img\mulberry_devices.png);
+        height: 570px;
+        top: 35px; }
   .projects .projects_wrapper.run {
     background-color: #8A9FA8;
     -webkit-box-orient: horizontal;
@@ -98,35 +128,63 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
     .projects .projects_wrapper.run .project-image_background {
-      background-image: url(..\..\..\dist\assets\img\run_mobile.png);
       background-size: cover;
       height: 500px; }
       @media only screen and (min-width: 768px) {
         .projects .projects_wrapper.run .project-image_background {
-          height: 300px;
-          background-image: url(..\..\..\dist\assets\img\run_digital_devices.png); } }
+          height: 300px; } }
       @media only screen and (min-width: 992px) {
         .projects .projects_wrapper.run .project-image_background {
-          background-image: url(..\..\..\dist\assets\img\run_desktop.png);
           height: 460px;
           position: absolute;
           left: -160px;
           width: 795px;
           top: 95px; } }
+      @media only screen and (min-width: 1200px) {
+        .projects .projects_wrapper.run .project-image_background {
+          height: 520px;
+          left: -150px;
+          width: 915px;
+          top: 55px; } }
+      .projects .projects_wrapper.run .project-image_background.default {
+        background-image: url(..\..\..\dist\assets\img\run_mobile.png); }
+        @media only screen and (min-width: 768px) {
+          .projects .projects_wrapper.run .project-image_background.default {
+            background-image: url(..\..\..\dist\assets\img\run_digital_devices.png); } }
+        @media only screen and (min-width: 992px) {
+          .projects .projects_wrapper.run .project-image_background.default {
+            background-image: url(..\..\..\dist\assets\img\run_desktop.png); } }
+      .projects .projects_wrapper.run .project-image_background.device-image {
+        background-image: url(..\..\..\dist\assets\img\run_devices.png);
+        height: 570px;
+        top: 35px; }
 
 .projects .device-icons {
-  display: none;
-  cursor: pointer; }
+  display: none; }
   @media only screen and (min-width: 992px) {
     .projects .device-icons {
       padding: 0 0.3125rem 1.4rem;
       display: inline-block; } }
+  .projects .device-icons_wrapper {
+    position: relative; }
+    .projects .device-icons_wrapper:hover .device-icons_desktop, .projects .device-icons_wrapper:active .device-icons_desktop {
+      opacity: .4; }
+    .projects .device-icons_wrapper:hover .device-icons_grouped, .projects .device-icons_wrapper:active .device-icons_grouped {
+      left: 63px;
+      opacity: 1; }
   .projects .device-icons_mobile {
     width: 15px; }
   .projects .device-icons_ipad {
     width: 23px; }
   .projects .device-icons_desktop {
     width: 47px; }
+  .projects .device-icons_grouped {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out; }
 
 footer {
   padding: 1.875rem 0 4.0625rem; }
@@ -134,6 +192,9 @@ footer {
     opacity: .8; }
   footer .about .title {
     font-size: 1.875rem; }
+  footer .social i {
+    font-size: 2rem;
+    padding-right: 0.5rem; }
 
 body {
   font-size: 16px;
@@ -167,7 +228,52 @@ p {
 
 a {
   text-decoration: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  -webkit-transition: color 200ms;
+  transition: color 200ms; }
+  a:hover, a:active {
+    color: #F99D1C; }
+
+.web-link {
+  position: relative; }
+  @media only screen and (min-width: 992px) {
+    .web-link {
+      padding-right: 50px; }
+      .web-link:hover .arrow_right, .web-link:active .arrow_right {
+        -webkit-transform: scaleX(1) translateX(30px);
+                transform: scaleX(1) translateX(30px); } }
+
+.arrow_right {
+  position: absolute;
+  border-bottom: 1px solid #18181A;
+  height: 1px;
+  width: 50px;
+  right: 0;
+  top: 50%;
+  margin: auto;
+  -webkit-transform: scaleX(0) translateX(0);
+          transform: scaleX(0) translateX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  pointer-events: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.12, 0.75, 0.4, 1);
+  transition: all 0.3s cubic-bezier(0.12, 0.75, 0.4, 1); }
+  .arrow_right:before, .arrow_right:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background: #18181A;
+    right: 4px; }
+  .arrow_right:before {
+    top: -11px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .arrow_right:after {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
 
 .is-open {
   display: block; }
@@ -177,10 +283,18 @@ ul {
   padding-left: 0; }
 
 .intro {
-  padding: 1.5rem 0 2rem; }
+  padding: 2rem 0 2.5rem; }
+  @media only screen and (min-width: 768px) {
+    .intro {
+      padding: 5rem 0 6rem; } }
   @media only screen and (min-width: 992px) {
     .intro {
-      padding: 3.5rem 0 5.5rem; } }
+      padding: 5rem 0 4rem; } }
+  @media only screen and (min-width: 1440px) {
+    .intro {
+      padding: 6.5rem 0 7.5rem; } }
+  .intro h1 {
+    padding-bottom: 1.875rem; }
 
 .section-margin {
   margin: 0.625rem 1.875rem; }
