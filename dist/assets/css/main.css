@@ -229,8 +229,8 @@ p {
 a {
   text-decoration: none;
   color: #FFFFFF;
-  -webkit-transition: color 200ms;
-  transition: color 200ms; }
+  -webkit-transition: color 400ms;
+  transition: color 400ms; }
   a:hover, a:active {
     color: #F99D1C; }
 
