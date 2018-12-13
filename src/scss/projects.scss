@@ -51,6 +51,7 @@
             }
             &.device-image {
                 opacity: 0;
+                position: absolute;
                 @include mq('desktop') {
                     height: 484px;
                     width: 772px;
@@ -72,7 +73,9 @@
                 }
             }
             .device-image {
-                background-image: url(..\..\..\dist\assets\img\citrus_devices.png);
+                @include mq('desktop') {
+                    background-image: url(..\..\..\dist\assets\img\citrus_devices.png);
+                }
             }
         }
         &.forage-notes {
@@ -87,7 +90,9 @@
                 }
             }
             .device-image {
-                background-image: url(..\..\..\dist\assets\img\.png);
+                @include mq('desktop') {
+                    background-image: url(..\..\..\dist\assets\img\.png);
+                }
             }
         }
         &.macallan {
@@ -105,7 +110,9 @@
             }
 
             .device-image {
-                background-image: url(..\..\..\dist\assets\img\macallan_devices.png);
+                @include mq('desktop') {
+                    background-image: url(..\..\..\dist\assets\img\macallan_devices.png);
+                }
             }
         }
         &.mulberry {
@@ -141,9 +148,11 @@
                     }
                 }
                 &.device-image {
-                    background-image: url(..\..\..\dist\assets\img\mulberry_devices.png);
-                    height: 570px;
-                    top: 35px;
+                    @include mq('desktop') {
+                        background-image: url(..\..\..\dist\assets\img\mulberry_devices.png);
+                        height: 570px;
+                        top: 35px;
+                    }
                 }
             }
         }
@@ -180,9 +189,11 @@
                     }
                 }
                 &.device-image {
-                    background-image: url(..\..\..\dist\assets\img\run_devices.png);
-                    height: 570px;
-                    top: 35px;
+                    @include mq('desktop') {
+                        background-image: url(..\..\..\dist\assets\img\run_devices.png);
+                        height: 570px;
+                        top: 35px;
+                    }
                 }
             }
         }

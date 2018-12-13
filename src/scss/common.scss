@@ -71,16 +71,16 @@ a {
     &:after {
         @include pseudo;
         width: 1px;
-        height: 15px;
+        height: 9px;
         background: $color-primary-1;
-        right: 4px;
+        right: 2px;
     }
     &:before {
-        top: -11px;
+        top: -6px;
         transform: rotate(-45deg);
     }
     &:after {
-        top: 0;
+        top: 1px;
         transform: rotate(45deg);
     }
 }
