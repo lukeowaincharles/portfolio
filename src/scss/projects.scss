@@ -37,6 +37,7 @@
         .project-image_background {
             background-size: cover;
             height: 500px;
+            transition: 600ms opacity ease-in-out;
 
             @include mq('tablet') {
                 height: 300px;
@@ -49,7 +50,7 @@
                 position: absolute;
             }
             &.device-image {
-                display: none;
+                opacity: 0;
                 @include mq('desktop') {
                     height: 484px;
                     width: 772px;
@@ -183,6 +184,14 @@
                     height: 570px;
                     top: 35px;
                 }
+            }
+        }
+        &.is-hovered {
+            .default {
+                opacity: 0;
+            }
+            .device-image {
+                opacity: 1;
             }
         }
     }

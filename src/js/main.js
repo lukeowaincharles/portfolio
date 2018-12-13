@@ -14,12 +14,8 @@ $(document).ready(function () {
     });
 
     // device image change
-    $('.device-icons').hover(function () {
-        $('.default').stop().fadeOut(500);
-        $('.device-image').stop().fadeIn(1000);
-    }, function () {
-        $('.default').stop().fadeIn(1000);
-        $('.device-image').stop().fadeOut(500);
+    $('.device-icons_wrapper').hover(function (e) {
+        $(this).closest('.projects_wrapper').toggleClass('is-hovered');
     });
 
 });
