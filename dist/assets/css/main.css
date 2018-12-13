@@ -31,7 +31,9 @@
     opacity: .85; }
   .projects .projects_wrapper .project-image_background {
     background-size: cover;
-    height: 500px; }
+    height: 500px;
+    -webkit-transition: 600ms opacity ease-in-out;
+    transition: 600ms opacity ease-in-out; }
     @media only screen and (min-width: 768px) {
       .projects .projects_wrapper .project-image_background {
         height: 300px; } }
@@ -42,7 +44,7 @@
         top: 45px;
         position: absolute; } }
     .projects .projects_wrapper .project-image_background.device-image {
-      display: none; }
+      opacity: 0; }
       @media only screen and (min-width: 992px) {
         .projects .projects_wrapper .project-image_background.device-image {
           height: 484px;
@@ -158,6 +160,10 @@
         background-image: url(..\..\..\dist\assets\img\run_devices.png);
         height: 570px;
         top: 35px; }
+  .projects .projects_wrapper.is-hovered .default {
+    opacity: 0; }
+  .projects .projects_wrapper.is-hovered .device-image {
+    opacity: 1; }
 
 .projects .device-icons {
   display: none; }
