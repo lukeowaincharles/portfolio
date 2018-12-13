@@ -2,6 +2,7 @@
     .projects_wrapper {
         padding-top: 1.25rem;
         position: relative;
+        overflow: hidden;
         @include mq('desktop') {
             height: 600px;
             display: flex;
@@ -182,7 +183,7 @@
                 &.default {
                     background-image: url(..\..\..\dist\assets\img\run_mobile.png);
                     @include mq('tablet') {
-                        background-image: url(..\..\..\dist\assets\img\run_digital_devices.png);
+                        background-image: url(..\..\..\dist\assets\img\run_devices.png);
                     }
                     @include mq('desktop') {
                         background-image: url(..\..\..\dist\assets\img\run_desktop.png);

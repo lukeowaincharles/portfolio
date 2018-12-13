@@ -1,7 +1,8 @@
 /* Fonts */
 .projects .projects_wrapper {
   padding-top: 1.25rem;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media only screen and (min-width: 992px) {
     .projects .projects_wrapper {
       height: 600px;
@@ -157,7 +158,7 @@
         background-image: url(..\..\..\dist\assets\img\run_mobile.png); }
         @media only screen and (min-width: 768px) {
           .projects .projects_wrapper.run .project-image_background.default {
-            background-image: url(..\..\..\dist\assets\img\run_digital_devices.png); } }
+            background-image: url(..\..\..\dist\assets\img\run_devices.png); } }
         @media only screen and (min-width: 992px) {
           .projects .projects_wrapper.run .project-image_background.default {
             background-image: url(..\..\..\dist\assets\img\run_desktop.png); } }
