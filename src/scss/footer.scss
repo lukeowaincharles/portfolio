@@ -15,6 +15,15 @@ footer {
             font-size: 1.875rem;
         }
     }
+    .experience {
+        &_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                padding-bottom: .4rem;
+            }
+        }
+    }
     .social {
         i {
             font-size: 2rem;

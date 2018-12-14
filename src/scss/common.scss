@@ -94,6 +94,17 @@ ul {
     padding-left: 0;
 }
 
+.col-small {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    @include mq('tablet') {
+        flex: 0 0 14%;
+        max-width: 14%;
+        padding-right: 1.875rem;
+    }
+}
+
 .intro {
     padding: 2rem 0 2.5rem;
     @include mq('tablet') {
