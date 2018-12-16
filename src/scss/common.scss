@@ -98,6 +98,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    padding-right: 1.2rem;
     @include mq('tablet') {
         flex: 0 0 14%;
         max-width: 14%;
@@ -145,7 +146,6 @@ ul {
 
 .width-restrict__medium {
     width: 300px;
-    margin: 0 auto;
 
     @include mq('tablet') {
         width: 600px;
