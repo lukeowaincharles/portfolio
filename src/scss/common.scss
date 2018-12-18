@@ -82,6 +82,9 @@ a {
     &:after {
         top: 1px;
         transform: rotate(45deg);
+        .mac & {
+            top: 0;
+        }
     }
 }
 
@@ -124,7 +127,6 @@ ul {
 
 .section-margin {
     margin: 0.625rem 1.875rem;
-
     @include mq('desktop') {
         margin: 1.875rem 4.375rem;
     }
