@@ -36,6 +36,12 @@
   .projects_wrapper .text {
     margin-bottom: 2.3125rem;
     opacity: .85; }
+    @media only screen and (min-width: 768px) {
+      .projects_wrapper .text {
+        width: 80%; } }
+    @media only screen and (min-width: 992px) {
+      .projects_wrapper .text {
+        width: 100%; } }
   .projects_wrapper .project-image_background {
     background-size: cover;
     height: 500px;
