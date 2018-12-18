@@ -15,6 +15,12 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
+  @media only screen and (min-width: 768px) {
+    .projects_wrapper .section-margin {
+      margin: .625rem 5.875rem; } }
+  @media only screen and (min-width: 992px) {
+    .projects_wrapper .section-margin {
+      margin: 1.875rem 4.375rem; } }
   .projects_wrapper a:hover, .projects_wrapper a:active {
     color: #18181A; }
   @media only screen and (min-width: 992px) {
@@ -58,7 +64,9 @@
       background-image: url(..\..\..\dist\assets\img\citrus_mobile.png); }
       @media only screen and (min-width: 768px) {
         .projects_wrapper.citrus .default {
-          background-image: url(..\..\..\dist\assets\img\citrus_devices.png); } }
+          background-image: url(..\..\..\dist\assets\img\citrus_devices.png);
+          position: relative;
+          top: 30px; } }
       @media only screen and (min-width: 992px) {
         .projects_wrapper.citrus .default {
           background-image: url(..\..\..\dist\assets\img\citrus_desktop.png); } }
@@ -71,7 +79,9 @@
       background-image: url(..\..\..\dist\assets\img\.png); }
       @media only screen and (min-width: 768px) {
         .projects_wrapper.forage-notes .default {
-          background-image: url(..\..\..\dist\assets\img\.png); } }
+          background-image: url(..\..\..\dist\assets\img\.png);
+          position: relative;
+          top: 30px; } }
       @media only screen and (min-width: 992px) {
         .projects_wrapper.forage-notes .default {
           background-image: url(..\..\..\dist\assets\img\.png); } }
@@ -84,7 +94,9 @@
       background-image: url(..\..\..\dist\assets\img\macallan_mobile.png); }
       @media only screen and (min-width: 768px) {
         .projects_wrapper.macallan .default {
-          background-image: url(..\..\..\dist\assets\img\macallan_devices.png); } }
+          background-image: url(..\..\..\dist\assets\img\macallan_devices.png);
+          position: relative;
+          top: 30px; } }
       @media only screen and (min-width: 992px) {
         .projects_wrapper.macallan .default {
           background-image: url(..\..\..\dist\assets\img\macallan_desktop.png); } }
@@ -321,6 +333,8 @@ a {
     top: 1px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
+    .mac .arrow_right:after {
+      top: 0; }
 
 .is-open {
   display: block; }
