@@ -86,19 +86,19 @@
     &.forage-notes {
         background-color: $color-primary-4;
         .default {
-            background-image: url(..\..\..\dist\assets\img\.png);
+            background-image: url(..\..\..\dist\assets\img\forage-notes_mobile.png);
             @include mq('tablet') {
-                background-image: url(..\..\..\dist\assets\img\.png);
+                background-image: url(..\..\..\dist\assets\img\forage-notes_devices.png);
                 position: relative;
                 top: 30px;
             }
             @include mq('desktop') {
-                background-image: url(..\..\..\dist\assets\img\.png);
+                background-image: url(..\..\..\dist\assets\img\forage-notes_desktop.png);
             }
         }
         .device-image {
             @include mq('desktop') {
-                background-image: url(..\..\..\dist\assets\img\.png);
+                background-image: url(..\..\..\dist\assets\img\forage-notes_devices.png);
             }
         }
     }
