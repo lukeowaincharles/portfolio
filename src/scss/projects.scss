@@ -41,6 +41,12 @@
     .text {
         margin-bottom: 2.3125rem;
         opacity: .85;
+        @include mq('tablet') {
+            width: 80%;
+        }
+        @include mq('desktop') {
+            width: 100%;
+        }
     }
     .project-image_background {
         background-size: cover;
