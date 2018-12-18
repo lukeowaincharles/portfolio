@@ -76,18 +76,18 @@
   .projects_wrapper.forage-notes {
     background-color: #578063; }
     .projects_wrapper.forage-notes .default {
-      background-image: url(..\..\..\dist\assets\img\.png); }
+      background-image: url(..\..\..\dist\assets\img\forage-notes_mobile.png); }
       @media only screen and (min-width: 768px) {
         .projects_wrapper.forage-notes .default {
-          background-image: url(..\..\..\dist\assets\img\.png);
+          background-image: url(..\..\..\dist\assets\img\forage-notes_devices.png);
           position: relative;
           top: 30px; } }
       @media only screen and (min-width: 992px) {
         .projects_wrapper.forage-notes .default {
-          background-image: url(..\..\..\dist\assets\img\.png); } }
+          background-image: url(..\..\..\dist\assets\img\forage-notes_desktop.png); } }
     @media only screen and (min-width: 992px) {
       .projects_wrapper.forage-notes .device-image {
-        background-image: url(..\..\..\dist\assets\img\.png); } }
+        background-image: url(..\..\..\dist\assets\img\forage-notes_devices.png); } }
   .projects_wrapper.macallan {
     background-color: #088387; }
     .projects_wrapper.macallan .default {
@@ -350,7 +350,10 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  padding-right: 1.2rem; }
+  padding-right: 1.2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%; }
   @media only screen and (min-width: 768px) {
     .col-small {
       -webkit-box-flex: 0;
