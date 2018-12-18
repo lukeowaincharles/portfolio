@@ -127,9 +127,9 @@ ul {
 
 .section-margin {
     margin: 0.625rem 1.875rem;
-    @include mq('desktop') {
-        margin: 1.875rem 4.375rem;
-    }
+    // @include mq('desktop') {
+    //     margin: 1.875rem 4.375rem;
+    // }
     &_sides {
         margin: 0 0.9375rem;
         @include mq('desktop') {

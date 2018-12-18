@@ -3,18 +3,10 @@
     position: relative;
     overflow: hidden;
     @include mq('desktop') {
-        height: 600px;
+        min-height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .section-margin {
-        @include mq('tablet') {
-            margin: .625rem 5.875rem;
-        }
-        @include mq('desktop') {
-            margin: 1.875rem 4.375rem;
-        }
     }
     a {
         &:hover,
