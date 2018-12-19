@@ -6,7 +6,9 @@ $breakpoints: (
     "tablet": 768px,
     "desktop": 992px,
     "desktop-l": 1200px,
-    "desktop-xl": 1440px
+    "desktop-xl": 1440px,
+    "desktop-xxl": 1890px,
+    "desktop-sw": 2300px
 );
 
 @mixin mq($width, $type: min) {

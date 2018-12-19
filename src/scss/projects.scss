@@ -149,6 +149,12 @@
             @include mq('desktop-xl') {
                 left: 0;
             }
+            @include mq('desktop-xxl') {
+                left: 270px;
+            }
+            @include mq('desktop-sw') {
+                left: 350px;
+            }
         }
         .default {
             background-image: url(..\..\..\dist\assets\img\mulberry_mobile.png);
@@ -173,6 +179,12 @@
             }
             @include mq('desktop-xl') {
                 left: 0;
+            }
+            @include mq('desktop-xxl') {
+                left: 270px;
+            }
+            @include mq('desktop-sw') {
+                left: 350px;
             }
         }
     }
@@ -201,6 +213,12 @@
             @include mq('desktop-xl') {
                 left: 0;
             }
+            @include mq('desktop-xxl') {
+                left: 270px;
+            }
+            @include mq('desktop-sw') {
+                left: 350px;
+            }
         }
         .default {
             background-image: url(..\..\..\dist\assets\img\run_mobile.png);
@@ -227,6 +245,12 @@
             }
             @include mq('desktop-xl') {
                 left: 0;
+            }
+            @include mq('desktop-xxl') {
+                left: 270px;
+            }
+            @include mq('desktop-sw') {
+                left: 350px;
             }
         }
     }
