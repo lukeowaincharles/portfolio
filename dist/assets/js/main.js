@@ -217,4 +217,11 @@ $(document).ready(function () {
         $(this).closest('.projects_wrapper').toggleClass('is-hovered');
     });
 
+    //page loader
+    $(window).on('load', function () {
+        setTimeout(function () {
+            $('#pageLoader').css('display', 'none');
+        }, 1500);
+    });
+
 });

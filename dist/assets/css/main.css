@@ -1,4 +1,38 @@
 /* Fonts */
+#pageLoader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99999;
+  background: -webkit-gradient(linear, left bottom, right top, from(#18181A), to(#70007F));
+  background: linear-gradient(to top right, #18181A, #70007F); }
+  #pageLoader .background {
+    width: 100vw;
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    position: relative; }
+    #pageLoader .background > div {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border-radius: 100%;
+      display: inline-block;
+      -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+      animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
+
 .projects_wrapper {
   padding-top: 1.25rem;
   position: relative;
