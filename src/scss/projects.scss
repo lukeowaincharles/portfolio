@@ -151,9 +151,15 @@
             }
             @include mq('desktop-xxl') {
                 left: 270px;
+                .chrome.win & {
+                    left: 200px
+                }
             }
             @include mq('desktop-sw') {
                 left: 480px;
+                .chrome.win & {
+                    left: 400px
+                }
             }
         }
         .default {
@@ -182,9 +188,15 @@
             }
             @include mq('desktop-xxl') {
                 left: 270px;
+                .chrome.win & {
+                    left: 200px
+                }
             }
             @include mq('desktop-sw') {
                 left: 480px;
+                .chrome.win & {
+                    left: 400px
+                }
             }
         }
     }
@@ -215,9 +227,15 @@
             }
             @include mq('desktop-xxl') {
                 left: 270px;
+                .chrome.win & {
+                    left: 200px
+                }
             }
             @include mq('desktop-sw') {
                 left: 480px;
+                .chrome.win & {
+                    left: 400px
+                }
             }
         }
         .default {
@@ -248,9 +266,15 @@
             }
             @include mq('desktop-xxl') {
                 left: 270px;
+                .chrome.win & {
+                    left: 200px
+                }
             }
             @include mq('desktop-sw') {
                 left: 480px;
+                .chrome.win & {
+                    left: 400px
+                }
             }
         }
     }

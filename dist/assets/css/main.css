@@ -134,10 +134,14 @@
           left: 0; } }
       @media only screen and (min-width: 1890px) {
         .projects_wrapper.mulberry .project-image_background {
-          left: 270px; } }
+          left: 270px; }
+          .chrome.win .projects_wrapper.mulberry .project-image_background {
+            left: 200px; } }
       @media only screen and (min-width: 2300px) {
         .projects_wrapper.mulberry .project-image_background {
-          left: 480px; } }
+          left: 480px; }
+          .chrome.win .projects_wrapper.mulberry .project-image_background {
+            left: 400px; } }
     .projects_wrapper.mulberry .default {
       background-image: url(..\..\..\dist\assets\img\mulberry_mobile.png); }
       @media only screen and (min-width: 768px) {
@@ -162,10 +166,14 @@
         left: 0; } }
     @media only screen and (min-width: 1890px) {
       .projects_wrapper.mulberry .device-image {
-        left: 270px; } }
+        left: 270px; }
+        .chrome.win .projects_wrapper.mulberry .device-image {
+          left: 200px; } }
     @media only screen and (min-width: 2300px) {
       .projects_wrapper.mulberry .device-image {
-        left: 480px; } }
+        left: 480px; }
+        .chrome.win .projects_wrapper.mulberry .device-image {
+          left: 400px; } }
   .projects_wrapper.run {
     background-color: #8A9FA8;
     -webkit-box-orient: horizontal;
@@ -196,10 +204,14 @@
           left: 0; } }
       @media only screen and (min-width: 1890px) {
         .projects_wrapper.run .project-image_background {
-          left: 270px; } }
+          left: 270px; }
+          .chrome.win .projects_wrapper.run .project-image_background {
+            left: 200px; } }
       @media only screen and (min-width: 2300px) {
         .projects_wrapper.run .project-image_background {
-          left: 480px; } }
+          left: 480px; }
+          .chrome.win .projects_wrapper.run .project-image_background {
+            left: 400px; } }
     .projects_wrapper.run .default {
       background-image: url(..\..\..\dist\assets\img\run_mobile.png); }
       @media only screen and (min-width: 768px) {
@@ -224,10 +236,14 @@
         left: 0; } }
     @media only screen and (min-width: 1890px) {
       .projects_wrapper.run .device-image {
-        left: 270px; } }
+        left: 270px; }
+        .chrome.win .projects_wrapper.run .device-image {
+          left: 200px; } }
     @media only screen and (min-width: 2300px) {
       .projects_wrapper.run .device-image {
-        left: 480px; } }
+        left: 480px; }
+        .chrome.win .projects_wrapper.run .device-image {
+          left: 400px; } }
   .projects_wrapper.is-hovered .default {
     opacity: 0; }
   .projects_wrapper.is-hovered .device-image {
