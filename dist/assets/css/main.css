@@ -15,7 +15,7 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 99999;
-  background: -webkit-gradient(linear, left top, right bottom, from(#18181A), to(#70007F)); }
+  background: #70007F; }
   #pageLoader .background {
     width: 100vw;
     text-align: center;

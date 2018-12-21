@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     z-index: 99999;
-    background: -webkit-gradient(linear, left top, right bottom, from($color-primary-1), to($color-secondary-1));
+    background: $color-secondary-1;
 
     .background {
         width: 100vw;
