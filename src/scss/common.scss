@@ -68,10 +68,13 @@ a {
     right: 0;
     top: 50%;
     margin: auto;
-    transform: scaleX(0) translateX(0);
+    transform: scaleX(1) translateX(70px);
     transform-origin: left;
     pointer-events: none;
     transition: all .3s cubic-bezier(.12, .75, .4, 1), border-bottom .6s ease-in-out;
+    @include mq('desktop') {
+        transform: scaleX(0) translateX(0);
+    }
 
     &:before,
     &:after {
