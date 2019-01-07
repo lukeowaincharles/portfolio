@@ -1,42 +1,53 @@
 {
-    "name": "luke-portfolio",
-    "version": "1.0.0",
-    "description": "",
-    "main": "gulpfile.js",
-    "directories": {
-        "test": "tests"
-    },
-    "dependencies": {
-        "gulp": "^3.9.1"
-    },
-    "devDependencies": {
-        "bower": "^1.8.2",
-        "browser-sync": "^2.26.3",
-        "gulp": "^3.9.1",
-        "gulp-concat": "^2.6.1",
-        "gulp-autoprefixer": "^6.0.0",
-        "gulp-cssnano": "^2.1.3",
-        "gulp-jshint": "^1.0.0",
-        "gulp-rename": "^1.4.0",
-        "gulp-imagemin": "^4.1.0",
-        "gulp-notify": "^3.2.0",
-        "gulp-cache": "^1.0.2",
-        "gulp-wait": "^0.0.2",
-        "gulp-if": "^2.0.2",
-        "gulp-pleeease": "^2.0.2",
-        "gulp-sass": "^4.0.2",
-        "gulp-watch-sass": "^1.4.1",
-        "gulp-sequence": "^0.4.6",
-        "gulp-sourcemaps": "^2.6.1",
-        "gulp-uglify": "^3.0.0",
-        "gulp-util": "^3.0.8",
-        "main-bower-files": "^2.13.1",
-        "wiredep": "^4.0.0",
-        "del": "^3.0.0"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC"
+  "name": "luke-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-jshint": "^1.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-wait": "^0.0.2",
+    "gulp-if": "^2.0.2",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch-sass": "^1.4.1",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "main-bower-files": "^2.13.1",
+    "wiredep": "^4.0.0",
+    "del": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeowaincharles/portfolio.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/lukeowaincharles/portfolio/issues"
+  },
+  "homepage": "https://github.com/lukeowaincharles/portfolio#readme"
 }
