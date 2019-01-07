@@ -133,7 +133,8 @@
           top: 30px; } }
       @media only screen and (min-width: 992px) {
         .projects_wrapper.citrus .default {
-          background-image: url(..\..\..\dist\assets\img\citrus_desktop.png); } }
+          background-image: url(..\..\..\dist\assets\img\citrus_desktop.png);
+          top: 0; } }
     @media only screen and (min-width: 992px) {
       .projects_wrapper.citrus .device-image {
         background-image: url(..\..\..\dist\assets\img\citrus_devices.png); } }
@@ -148,7 +149,8 @@
           top: 30px; } }
       @media only screen and (min-width: 992px) {
         .projects_wrapper.forage-notes .default {
-          background-image: url(..\..\..\dist\assets\img\forage-notes_desktop.png); } }
+          background-image: url(..\..\..\dist\assets\img\forage-notes_desktop.png);
+          top: 0; } }
     @media only screen and (min-width: 992px) {
       .projects_wrapper.forage-notes .device-image {
         background-image: url(..\..\..\dist\assets\img\forage-notes_devices.png); } }
@@ -163,7 +165,8 @@
           top: 30px; } }
       @media only screen and (min-width: 992px) {
         .projects_wrapper.macallan .default {
-          background-image: url(..\..\..\dist\assets\img\macallan_desktop.png); } }
+          background-image: url(..\..\..\dist\assets\img\macallan_desktop.png);
+          top: 0; } }
     @media only screen and (min-width: 992px) {
       .projects_wrapper.macallan .device-image {
         background-image: url(..\..\..\dist\assets\img\macallan_devices.png); } }
