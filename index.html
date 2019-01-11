@@ -34,19 +34,8 @@
         </div>
     </div>
     <main>
-        <header class="section-margin">
-            <nav>
-                <ul class="text-align__center">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="intro text-align__center section-margin">
-            <h1>Hello, I'm Luke. A Frontend-Developer,
-                <br /> Photographer and Motorbike Rider.</h1>
-            <a href="#projects"><i class="fas fa-chevron-down"></i></a>
-        </div>
+        <section id="nav"></section>
+        <section id="intro"></section>
         <section class="projects" id="projects">
             <!-- Start Project -->
             <div class="projects_wrapper macallan">
@@ -229,13 +218,21 @@
             </div>
         </footer>
     </main>
+
+    <!--Load React-->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!--React components -->
+    <script src="nav.js"></script>
+    <script src="intro.js"></script>
     <script src="dist/assets/js/main.min.js"></script>
-    <script id="__bs_script__">
+    <!--<script id="__bs_script__">
         //<![CDATA[
         document.write("<script async src='http://HOST:3112/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace(
             "HOST", location.hostname));
         //]]>
-    </script>
+    </script>-->
 </body>
 
 </html>
