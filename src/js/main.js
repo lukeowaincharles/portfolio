@@ -22,7 +22,7 @@ $(document).ready(function () {
     $(window).on('load', function () {
         setTimeout(function () {
             $('#pageLoader').css('display', 'none');
-        }, 1500);
+        }, 2000);
     });
 
 });
