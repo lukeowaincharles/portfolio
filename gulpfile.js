@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    babel = require("gulp-babel"),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cssnano = require('gulp-cssnano'),
@@ -45,8 +46,20 @@ gulp.task('styles', function () {
     }));
 });
 
+gulp.task('react-scripts', function () {
+    return gulp.src('src/js/react/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(babel())
+        .pipe(concat('react.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('dist/assets/js'))
+        .pipe(notify({
+            message: 'React task complete' 
+        }));
+});
+
 gulp.task('scripts', function () {
-    return gulp.src('src/js/**/*.js')
+    return gulp.src('src/js/*.js')
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('default'))
         .pipe(concat('main.js'))
@@ -68,10 +81,10 @@ gulp.task('images', function () {
             progressive: true,
             interlaced: true
         })))
-        .pipe(gulp.dest('dist/assets/img'))
-        .pipe(notify({
-            message: 'Images task complete'
-        }));
+        .pipe(gulp.dest('dist/assets/img'));
+        // .pipe(notify({
+        //     message: 'Images task complete'
+        // }));
 });
 
 gulp.task('clean', function () {
@@ -79,7 +92,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('default', ['clean'], function () {
-    gulp.start('styles', 'scripts', 'images');
+    gulp.start('styles', 'react-scripts', 'scripts', 'images');
 });
 
 gulp.task('watch', function () {
@@ -95,4 +108,6 @@ gulp.task('watch', function () {
 
 });
 
-gulp.task('default', ['scripts', 'images', 'styles', 'browser-sync', 'watch']);
+gulp.task('default', ['scripts', 'react-scripts',
+    'images', 'styles', 'browser-sync', 'watch'
+]);
