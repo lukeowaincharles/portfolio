@@ -25,4 +25,13 @@ $(document).ready(function () {
         }, 2000);
     });
 
+    // contact details accordion
+    $('.contactLink').on('click', function (e) {
+        e.preventDefault();
+        // $(this).next('.contactLink-details').toggleClass('is-active');
+        $(this).next('.contactLink-details').siblings('.contactLink-details').slideUp('normal');
+        $(this).next('.contactLink-details').slideToggle('normal');
+       
+    });
+
 });

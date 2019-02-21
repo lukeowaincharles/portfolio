@@ -76,6 +76,7 @@
             }
             @include mq('desktop') {
                 background-image: url(..\..\..\dist\assets\img\citrus_desktop.png);
+                top: 0;
             }
         }
         .device-image {
@@ -95,6 +96,7 @@
             }
             @include mq('desktop') {
                 background-image: url(..\..\..\dist\assets\img\forage-notes_desktop.png);
+                top: 0;
             }
         }
         .device-image {
@@ -116,6 +118,7 @@
 
             @include mq('desktop') {
                 background-image: url(..\..\..\dist\assets\img\macallan_desktop.png);
+                top: 0;
             }
         }
         .device-image {
